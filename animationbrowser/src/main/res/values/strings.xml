@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Animation Browser</string>
+    <string name="no_animation">No animation</string>
+    <string name="zooming">Zoom</string>
+    <string name="coloring">Coloring</string>
+    <string name="shaking">Shaking</string>
+    <string name="sliding">Sliding ▷▶</string>
+    <string name="typing">Typing |.</string>
+    <string name="coming_soon">Coming soon</string>
+</resources>

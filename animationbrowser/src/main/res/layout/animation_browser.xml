@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/animationBrowser"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:animationCache="true"
+    android:fadeScrollbars="false"
+    android:fadingEdge="horizontal"
+    android:fadingEdgeLength="2dp"
+    android:overScrollMode="always"
+    android:scrollbarAlwaysDrawHorizontalTrack="false"
+    android:scrollbarAlwaysDrawVerticalTrack="false"
+    android:scrollbars="none">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/lnColor"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollbarFadeDuration="1"
+        android:scrollbars="none">
+
+        <Button
+            android:id="@+id/btnAnimation0"
+            android:layout_width="112dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_vertical|end"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:background="#FFFFFF"
+            android:ellipsize="end"
+            android:fontFamily="@font/unicode_impact"
+            android:scaleType="fitXY"
+            android:text="@string/no_animation"
+            android:textColor="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/btnAnimation1"
+            android:layout_width="112dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_vertical|start"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:background="#FFFFEF"
+            android:ellipsize="end"
+            android:fontFamily="@font/unicode_impact"
+            android:scaleType="fitXY"
+            android:text="@string/zooming"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btnAnimation2"
+            android:layout_width="112dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_vertical|end"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:background="#FFDFFF"
+            android:ellipsize="end"
+            android:fontFamily="@font/impact"
+            android:scaleType="fitXY"
+            android:text="@string/coloring"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnAnimation3"
+            android:layout_width="112dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_vertical|start"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:background="@android:color/holo_orange_light"
+            android:ellipsize="end"
+            android:fontFamily="@font/impacted"
+            android:rotation="5"
+            android:scaleType="fitXY"
+            android:text="@string/shaking"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnAnimation4"
+            android:layout_width="112dp"
+            android:layout_height="64dp"
+            android:layout_gravity="left|right|center_vertical|center_horizontal|end"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:background="#92D050"
+            android:ellipsize="end"
+            android:fontFamily="@font/unicode_impact"
+            android:scaleType="fitXY"
+            android:text="@string/sliding"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnAnimation5"
+            android:layout_width="112dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_vertical|start"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:background="#00B050"
+            android:ellipsize="end"
+            android:fontFamily="@font/unicode_impact"
+            android:scaleType="fitXY"
+            android:text="@string/typing"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnAnimation6"
+            android:layout_width="112dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_vertical|start"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:ellipsize="end"
+            android:fontFamily="@font/unicode_impact"
+            android:scaleType="fitXY"
+            android:text="@string/coming_soon"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnAnimation7"
+            android:layout_width="112dp"
+            android:layout_height="64dp"
+            android:layout_gravity="left|right|center_vertical|center_horizontal|end"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:ellipsize="end"
+            android:fontFamily="@font/unicode_impact"
+            android:scaleType="fitXY"
+            android:text="@string/coming_soon"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnAnimation9"
+            android:layout_width="112dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_vertical|start"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:background="#002060"
+            android:ellipsize="end"
+            android:fontFamily="@font/unicode_impact"
+            android:scaleType="fitXY"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</HorizontalScrollView>
+

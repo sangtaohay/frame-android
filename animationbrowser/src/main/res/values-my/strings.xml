@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Animation Browser</string>
+    <string name="no_animation">အဘယ်သူမျှမကာတွန်း</string>
+    <string name="zooming">" zoom ကို"</string>
+    <string name="coloring">အရောင်</string>
+    <string name="shaking">လှုပ်</string>
+    <string name="sliding">လျှော ▷▶</string>
+    <string name="typing">စာရိုက် |.</string>
+    <string name="coming_soon">"မကြာမှီလာမည် "</string>
+</resources>

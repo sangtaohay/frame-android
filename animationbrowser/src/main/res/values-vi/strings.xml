@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Animation Browser</string>
+    <string name="no_animation">Không hiệu ứng</string>
+    <string name="zooming">Phóng to</string>
+    <string name="coloring">Đổi màu</string>
+    <string name="shaking">Xoay chữ</string>
+    <string name="sliding">Di chuyển ▷▶</string>
+    <string name="typing">Gõ chữ</string>
+    <string name="coming_soon">Sắp ra mắt</string>
+</resources>

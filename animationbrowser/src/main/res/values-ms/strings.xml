@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Animation Browser</string>
+    <string name="zooming">Zum</string>
+    <string name="no_animation">Tiada animasi</string>
+    <string name="coloring">Pewarna</string>
+    <string name="shaking">Goncang</string>
+    <string name="sliding">Gelongsor ▷▶</string>
+    <string name="typing">Menaip |.</string>
+    <string name="coming_soon">Akan datang</string>
+</resources>
