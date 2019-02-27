@@ -3,7 +3,7 @@ package com.sangtaohay.memestudio.contract;
 import android.provider.BaseColumns;
 
 public class MemeContract {
-    public static final String DB_NAME = "com.sangtaohay.memestudio.db";
+    public static final String DB_NAME = "com.sangtaohay.frame.db";
     public static final int DB_VERSION = 9;
 
     public class MemeEntry implements BaseColumns {

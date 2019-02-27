@@ -24,6 +24,7 @@ import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
@@ -125,22 +126,22 @@ public class DetailsActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
-        //retrieves the thumbnail data
-        Bundle bundle = getIntent().getExtras();
-        thumbnailTop = bundle.getInt("top");
-        thumbnailLeft = bundle.getInt("left");
-        thumbnailWidth = bundle.getInt("width");
-        thumbnailHeight = bundle.getInt("height");
+        thumbnailTop = 0;
+        thumbnailLeft = 0;
+        thumbnailWidth = 100;
+        thumbnailHeight = 100;
 
-        memeId = bundle.getInt("_id");
-        String title = bundle.getString("title");
-        String image = bundle.getString("image");
-        final String textTop = bundle.getString("textTop");
-        String textBottom = bundle.getString("textBottom");
+        memeId = 0;
+        String title = "Title";
+        String image = "Image";
+        final String textTop = "Text top";
+        String textBottom = "Text bottom";
 
-        String textBottomLeft = bundle.getString("textBottomLeft");
-        String textBottomRight = bundle.getString("textBottomRight");
-        enableAnimate = bundle.getBoolean("enableAnimate",false);
+        String textBottomLeft = "textBottomLeft";
+        String textBottomRight = "textBottomRight";
+        enableAnimate = true;
+        imageWidth = 500;
+        imageHeight = 500;
 
         imageName = image;
 
@@ -155,7 +156,7 @@ public class DetailsActivity extends AppCompatActivity {
 
         //Set the background color to black
         frameLayout = findViewById(R.id.main_background);
-        colorDrawable = new ColorDrawable(Color.BLACK);
+        colorDrawable = new ColorDrawable(Color.RED);
         frameLayout.setBackground(colorDrawable);
 
         // Only run the animation if we're coming from the parent activity, not if
@@ -238,8 +239,6 @@ public class DetailsActivity extends AppCompatActivity {
             }
         });
 
-        imageWidth = bundle.getInt("imageWidth");
-        imageHeight = bundle.getInt("imageHeight");
         progressBar = findViewById(R.id.frameLoading);
 
         pollHolder = findViewById(R.id.poll_holder);
@@ -306,6 +305,20 @@ public class DetailsActivity extends AppCompatActivity {
         }else{
             gifOutput = true;
         }
+
+        FrameLayout innerPhoto = findViewById(R.id.innerPhoto);
+        int w = innerPhoto.getWidth();
+        int h = innerPhoto.getHeight();
+        innerPhoto.setBackgroundColor(Color.GREEN);
+
+        innerPhoto.setRotation(45.0f);
+        innerPhoto.setTranslationX((w - h) / 2);
+        innerPhoto.setTranslationY((h - w) / 2);
+
+        ViewGroup.LayoutParams lp = innerPhoto.getLayoutParams();
+        lp.height = w;
+        lp.width = h;
+        innerPhoto.requestLayout();
     }
     private String getImgCachePath(String url) {
         FutureTarget<File> futureTarget = Glide.with(getBaseContext()).load(url).downloadOnly(100, 100);

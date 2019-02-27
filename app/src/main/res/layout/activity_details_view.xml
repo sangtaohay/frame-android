@@ -10,6 +10,7 @@
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:alpha="0.5"
         android:orientation="vertical">
 
         <ImageView
@@ -28,6 +29,15 @@
             android:padding="10dp"
             android:textColor="#fff"
             android:textSize="20dp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/innerPhoto"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp">
 
     </FrameLayout>
 
