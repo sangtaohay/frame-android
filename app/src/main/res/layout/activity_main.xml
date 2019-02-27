@@ -20,7 +20,19 @@
             android:layout_centerInParent="false"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="false"
+            android:visibility="gone"
             android:background="@drawable/image"></FrameLayout>
+
+        <com.sangtaohay.frame.view.HeartView
+            android:id="@+id/heartPhoto"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="false"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="false"
+            android:background="@android:color/transparent"></com.sangtaohay.frame.view.HeartView>
+
     </RelativeLayout>
 
     <LinearLayout
